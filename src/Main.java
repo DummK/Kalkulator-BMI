@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Podaj wzrost w metrach:");
+        System.out.println("Podaj wzrost w metracch:");
         double height = scan.nextDouble();
         System.out.println("Podaj mase w kilogram:");
         double weight = scan.nextDouble();
