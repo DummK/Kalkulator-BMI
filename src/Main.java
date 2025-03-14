@@ -1,17 +1,8 @@
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-
-        System.out.println("Podaj wzrost w metracch:");
-        double height = scan.nextDouble();
-        System.out.println("Podaj mase w kilogram:");
-        double weight = scan.nextDouble();
-
-        double bmi = weight/(height * height);
-
-        if(bmi < 18.5)
+class Method {
+    static public void CheckForBmi(double bmi) {
+         if(bmi < 18.5)
         {
             System.out.println("Niedowaga");
 
@@ -28,6 +19,20 @@ public class Main {
             System.out.println("Otylosc");
 
         }
+    }
+}
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Podaj wzrost w metracch:");
+            double height = scan.nextDouble();
+        System.out.println("Podaj mase w kilogram:");
+            double weight = scan.nextDouble();
+
+        double bmi = weight/(height * height);
+
+        Method.CheckForBmi(bmi);
     }
 }
